@@ -10,8 +10,7 @@ class TestLoginScreen extends ConsumerStatefulWidget {
 }
 
 class _TestLoginScreenState extends ConsumerState<TestLoginScreen> {
-  bool _isLoggedIn = false;
-  String _message = 'Not logged in';
+
 
   @override
   Widget build(BuildContext context) {

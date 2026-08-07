@@ -1,0 +1,110 @@
+description: A Flutter e-commerce application with Riverpod and Dio
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"  # ✅ This works for Dart 3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  
+  # Networking
+  dio: ^5.3.3
+  
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  
+  # Utilities
+  intl: ^0.18.1
+  equatable: ^2.0.5
+  image_picker: ^1.0.4
+  connectivity_plus: ^5.0.1
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+description: A Flutter e-commerce application with Riverpod and Dio
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  riverpod_annotation: ^2.1.1
+  
+  # Networking
+  dio: ^5.4.0
+  retrofit: ^4.0.1
+  
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+  badges: ^3.1.1
+  carousel_slider: ^4.2.1
+  
+  # Navigation
+  go_router: ^13.0.1
+  
+  # Utilities
+  intl: ^0.18.1
+  equatable: ^2.0.5
+  image_picker: ^1.0.4
+  connectivity_plus: ^5.0.1
+  url_launcher: ^6.2.1
+  flutter_dotenv: ^5.1.0
+  
+  # Form Validation
+  validators: ^3.0.0
+  
+  # Date & Time
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.3
+  retrofit_generator: ^7.0.1
+  flutter_native_splash: ^2.3.8
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - .env
+name: ecommerce_app

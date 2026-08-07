@@ -1,7 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../../../../core/api/api_service.dart';
-import '../../domain/repositories/auth_repository.dart';
-import '../models/auth_response_model.dart';
+import 'auth_repository.dart';
+import '../../data/models/auth_response_model.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final ApiService _apiService;

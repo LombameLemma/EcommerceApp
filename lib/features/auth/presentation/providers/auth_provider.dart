@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod/riverpod.dart';
-import '../../../core/providers/providers.dart';
+import '../../../../core/providers/providers.dart';
 import '../../domain/repositories/auth_repository.dart';
 import '../../data/models/auth_response_model.dart';
+import '../../domain/repositories/auth_repository_impl.dart';
+import '../../../../core/api/api_service.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 // Auth State
 class AuthState {
@@ -88,6 +91,13 @@ class AuthNotifier extends StateNotifier<AuthState> {
     }
   }
 }
+
+final authRepositoryProvider = Provider<AuthRepository>((ref) {
+  return AuthRepositoryImpl(
+    apiService: ApiService(),
+    storage: const FlutterSecureStorage(),
+  );
+});
 
 // Auth Provider
 final authProvider = StateNotifierProvider<AuthNotifier, AuthState>((ref) {

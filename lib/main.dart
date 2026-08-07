@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'core/providers/theme_provider.dart';
-import 'core/providers/providers.dart';
+import 'core/theme/app_theme.dart';
+import 'core/router/app_router.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const ProviderScope(child: MyApp()));
 }
 
@@ -12,16 +13,13 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final themeState = ref.watch(themeProvider);
+    final router = appRouterProvider;
     
-    return MaterialApp(
-      title: 'E-Commerce App',
-      theme: themeState.themeData,
-      initialRoute: '/login',
-      routes: {
-        '/login': (context) => const LoginScreen(),
-        // Add other routes
-      },
+    return MaterialApp.router(
+      title: 'Converse E-Commerce',
+      theme: AppTheme.lightTheme,
+      routerConfig: router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

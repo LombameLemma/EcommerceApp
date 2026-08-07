@@ -1,3 +1,11 @@
+name: ecommerce_app
+description: A Flutter e-commerce application with Riverpod and Dio
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
@@ -5,24 +13,35 @@ dependencies:
   # State Management
   riverpod: ^2.4.0
   flutter_riverpod: ^2.4.0
+  riverpod_annotation: ^2.1.1
   
   # Networking
-  dio: ^5.3.3
+  dio: ^5.4.0
   
   # Storage
   flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
   
-  # UI
+  # UI Components
   flutter_svg: ^2.0.9
   cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
   
   # Utilities
   intl: ^0.18.1
   equatable: ^2.0.5
-  image_picker: ^1.0.4
+  go_router: ^13.0.1
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
   build_runner: ^2.4.7
+  riverpod_generator: ^2.3.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
